@@ -1,5 +1,6 @@
 package com.gassion.SpringFront.controller;
 
+import com.gassion.SpringFront.entity.Language;
 import com.gassion.SpringFront.entity.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,7 +17,7 @@ public class ThymeleafController {
     @GetMapping
     public String getIndex(Model model) {
         User user = new User(1, "Soslan", "Gassiev",
-                22, "79298119014", "soslangassity04@gmail.com", Arrays.asList("Java", "Scala", "Kotlin"));
+                22, "79298119014", "soslangassity04@gmail.com", List.of(new Language(1, "Java"), new Language(2, "Kotlin")));
         model.addAttribute("user", user);
         System.out.println(user.getLang());
         return "thymeleaf_front";
