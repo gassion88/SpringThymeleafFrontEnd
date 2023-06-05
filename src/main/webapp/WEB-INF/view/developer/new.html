@@ -12,5 +12,72 @@
 
 <button type="button" class="btn btn-danger" onclick="location.href='/th';">Home</button>
 
+<sectio class="user_form">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <label for="user_id" class="form-label">User id</label>
+                <input type="number" id="user_id" class="form-control" aria-describedby="userIDHelpBlock">
+                <div id="userIDHelpBlock" class="form-text">
+                    Create ID
+                </div>
+
+                <br>
+
+                <label for="user_name" class="form-label">User name</label>
+                <input type="text" id="user_name" class="form-control" aria-describedby="userNamedHelpBlock">
+                <div id="userNameHelpBlock" class="form-text">
+                    Create name
+                </div>
+
+                <br>
+
+                <label for="user_password" class="form-label">User password</label>
+                <input type="password" id="user_password" class="form-control" aria-describedby="userPasswordHelpBlock">
+                <div id="userPasswordHelpBlock" class="form-text">
+                    Create password
+                </div>
+
+                <br>
+
+                <select class="form-select" aria-label="Select language">
+                    <option selected value="Java">Java</option>
+                    <option value="Kotlin">Kotlin</option>
+                    <option value="Rast">Rast</option>
+                </select>
+
+                <br>
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Save
+                </button>
+
+            </div>
+        </div>
+    </div>
+</sectio>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create user</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
 </body>
 </html>
