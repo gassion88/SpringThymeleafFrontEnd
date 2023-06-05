@@ -54,3 +54,19 @@ header, footer {
     color: var(--bs-white);
     background-color: var(--primaryColor);
 }
+
+.primary_color {
+    color: var(--primaryColor);
+}
+
+.secondary_color {
+    color: var(--secondaryColor);
+}
+
+.bg_primary {
+    background-color: var(--primaryColor);
+}
+
+.bg_secondary {
+    background-color: var(--secondaryColor);
+}
