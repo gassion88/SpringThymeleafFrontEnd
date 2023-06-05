@@ -27,9 +27,11 @@ header, footer {
     margin: 30px auto;
     transition: all 0.2s ease;
 }
+
 .itd_play:hover {
     background-color: var(--secondaryColor);
 }
+
 .itd_triangle {
     width: 0;
     height: 0;

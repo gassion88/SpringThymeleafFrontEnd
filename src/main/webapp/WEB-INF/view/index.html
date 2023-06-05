@@ -12,24 +12,40 @@
     <title>Title</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="text-center text-white">
-                        Spring front in thymeleaf project
-                    </h1>
-                    <div class="itd_play">
-                        <div class="itd_triangle"></div>
-                    </div>
-                    <a href="#footer" class="btn btn-itd btn-lg text-uppercase">Order</a>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center text-white">
+                    Spring front in thymeleaf project
+                </h1>
+                <div class="itd_play" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="itd_triangle"></div>
                 </div>
+                <a href="#footer" class="btn btn-itd btn-lg text-uppercase">Order</a>
             </div>
         </div>
-    </header>
-    <footer id="footer">
-        footer
-    </footer>
+    </div>
+</header>
+
+<footer id="footer">
+    footer
+</footer>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal header</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="/static/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
