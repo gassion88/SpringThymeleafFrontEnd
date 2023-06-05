@@ -5,6 +5,16 @@
     <title>Thymeleaf</title>
 </head>
 <body>
+<p th:text="${user.getName()}"></p>
 
+<p th:text="${T(java.lang.Math).sqrt(4)}"></p>
+
+<p th:text="${user.toString()}"></p>
+
+<p th:each="lang : ${user.getLang()}">
+    <span th:text="${lang}"></span>
+</p>
+
+<img src="/static/img/author.png" alt="">
 </body>
 </html>
