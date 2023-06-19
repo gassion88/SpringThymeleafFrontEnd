@@ -20,13 +20,13 @@
 <body ng-app="ThymeleafFront" ng-controller="CREATE_DEV_CONTROLLER">
 
 <button type="button" class="btn btn-danger" onclick="location.href='/th';">Home</button>
-
+{{dev.id}}
 <sectio class="user_form">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-12">
                 <label for="user_id" class="form-label">User id</label>
-                <input type="number" id="user_id" class="form-control" aria-describedby="userIDHelpBlock">
+                <input ng-model="dev.id" type="number" id="user_id" class="form-control" aria-describedby="userIDHelpBlock">
                 <div id="userIDHelpBlock" class="form-text">
                     Create ID
                 </div>
@@ -34,7 +34,7 @@
                 <br>
 
                 <label for="user_name" class="form-label">User name</label>
-                <input type="text" id="user_name" class="form-control" aria-describedby="userNamedHelpBlock">
+                <input ng-model="dev.name" type="text" id="user_name" class="form-control" aria-describedby="userNamedHelpBlock">
                 <div id="userNameHelpBlock" class="form-text">
                     Create name
                 </div>
